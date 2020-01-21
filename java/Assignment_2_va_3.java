@@ -90,12 +90,6 @@ public class Assignment_2_va_3 {
 			}
 		} while (l1.size() > 0);
 
-		/*
-		 * for (int i = 0; i < ID.length; i++) { // String info[] = {Full_name[i],
-		 * ID[i], Birth_date[i]}; System.out.println(Full_name[i] + "         " + ID[i]
-		 * + "        " + Birth_date[i] + "      " + diem_1[i] + "       " + diem_2[i] +
-		 * "     " + diem_3[i] + "     " + diem_4[i] + "     " + diem_5[i] +
-		 * "                    " + avg_diem[i]); }
-		 */
+		
 	}
 }
