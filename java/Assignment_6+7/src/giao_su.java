@@ -62,6 +62,7 @@ public class giao_su {
 
 	static void in() {
 		System.out.println();
+		System.out.println("Danh sách tất cả các giáo sư: ");
 		System.out.println("Full name         " + "Faculty       " + "Allowance       " + "AcademicDegree     "
 				+ "MonthlyTeachingTime      " + "SalaryMultiplier        " + "Salary       ");
 		System.out.println(
@@ -76,15 +77,5 @@ public class giao_su {
 		}
 	}
 
-	public static void main(String[] args) {
-		giao_su gs1 = new giao_su("Lê Quang Huy", "good", 500, "DOTOR", 200, 10);
-		giao_su gs2 = new giao_su("Lê Quang Hùng", "bad", 600, "MSTER", 200, 9);
-		giao_su gs3 = new giao_su("Lê Quang Tuấn", "good", 700, "DOCTOR", 200, 8);
-		giao_su gs4 = new giao_su("An Toàn Việt", "very good", 800, "BACHELOR", 200, 7);
-		giao_su gs5 = new giao_su("Nguyễn Huy Hùng", "very bad", 900, "DOCTOR", 200, 6);
-
-		in();
-
-	}
-
+	
 }
