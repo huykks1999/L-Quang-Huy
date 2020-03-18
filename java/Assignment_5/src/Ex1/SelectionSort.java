@@ -9,6 +9,7 @@ public class SelectionSort extends SequenceNumber implements Sort {
 	@Override
 	public void sort(int arr[]) {
 		sap_xep_chon(arr, n);
+		System.out.println("Dãy số sau khi sắp xếp bằng SelectionSort là:");
 	}
 	
 	private static void hoan_vi(int []A, int a, int b) {
@@ -30,15 +31,8 @@ public class SelectionSort extends SequenceNumber implements Sort {
 		}
 	}
 	
-	public static void main(String[] args) {
-		QuickSort q = new QuickSort(5);
-
-		q.input();
-		
-		q.sort(q.arr);
-		
-		q.print(q.arr);
-	}
+	
+	
 	
 
 }

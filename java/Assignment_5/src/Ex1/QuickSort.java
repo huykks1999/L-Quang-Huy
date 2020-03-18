@@ -5,12 +5,13 @@ public class QuickSort extends SequenceNumber implements Sort {
 	QuickSort(int n) {
 		super(n);
 	}
-
+    @Override
 	public void sort(int[] arr) {
 		int left = 0;
 		int right = arr.length - 1;
 
 		quickSort(arr, left, right);
+		System.out.println("Dãy số sau khi sắp xếp bằng QuickSort là: ");
 
 	}
 	
@@ -51,14 +52,6 @@ public class QuickSort extends SequenceNumber implements Sort {
 	  }
 
 
-	public static void main(String[] args) {
-		QuickSort q = new QuickSort(5);
-
-		q.input();
-		
-		q.sort(q.arr);
-		
-		q.print(q.arr);
-	}
+	
 
 }

@@ -9,6 +9,7 @@ public class InsertSort extends SequenceNumber implements Sort {
 	@Override
 	public void sort(int arr[]) {
        	sap_xep_chen(arr, n);	
+       	System.out.println("Dãy số sau khi sắp xếp bằng InsertSort là: ");
 	}
 	
 	private static void sap_xep_chen(int []A, int n) {
@@ -23,14 +24,7 @@ public class InsertSort extends SequenceNumber implements Sort {
 		}
 	}
 	
-	public static void main(String[] args) {
-		QuickSort q = new QuickSort(5);
-
-		q.input();
-		
-		q.sort(q.arr);
-		
-		q.print(q.arr);
-	}
+	
+	
 
 }

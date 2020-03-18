@@ -13,7 +13,7 @@ public class SequenceNumber {
 
 	public void input() {
 		arr = new int[n];
-		System.out.println("Hãy nhập " + n + "số từ bàn phím");
+		System.out.println("Hay nhap " + n + " so tu ban phim");
 
 		for (int i = 0; i < n; i++) {
 			Scanner sc = new Scanner(System.in);
@@ -25,10 +25,11 @@ public class SequenceNumber {
 	}
 
 	public void print(int arr[]) {
-		System.out.println("dãy số sau khi sắp xếp là:");
+		//System.out.println("day so sau khi sap xep là:");
 		for (int i = 0; i < n; i++) {
 			System.out.print(arr[i] + " ");
 		}
+		System.out.println("\n");
 	}
 
 }
