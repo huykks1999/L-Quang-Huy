@@ -4,7 +4,8 @@ import java.util.List;
 public class Queen extends Bee {
 
 	static List<Queen> queen = new ArrayList<>(10);
-
+    
+	//override void Damage Bee of Queen để tấn công ong loại Queen
 	@Override
 	public void damage(int damage) {
 		super.damage(damage);
@@ -18,7 +19,9 @@ public class Queen extends Bee {
 			health = 0;
 		}
 	}
-
+	
+	
+	// Override void checkHealthStatus of Bee để xem con Queen còn sống hay hẹo
 	@Override
 	public void checkHealthStatus() {
 		if (health > 20) {
@@ -28,6 +31,8 @@ public class Queen extends Bee {
 		}
 	}
 
+	
+	// construcster begin for blood = 100 
 	public Queen() {
 		this.health = 100;
 		

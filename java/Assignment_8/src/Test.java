@@ -6,7 +6,9 @@ import java.util.Scanner;
 public class Test {
 
 	static Random rd = new Random();
-
+    
+	
+	// Hàm khởi tạo cho các list Bee
 	static void begin() {
 		Queen.queen.clear();
 
@@ -20,7 +22,8 @@ public class Test {
 
 		}
 	}
-
+    
+	// Hàm in ra danh sách Bee
 	static void in() {
 		int k = -1;
 		int l = -1;
@@ -73,6 +76,8 @@ public class Test {
 		}
 	}
 
+	
+	//Hàm tấn công tất cả Bee
 	static void Attack() {
 		for (Queen Q : Queen.queen) {
 			Q.damage(rd.nextInt(81));
@@ -102,7 +107,10 @@ public class Test {
 			begin();
 			in();
 
-			System.out.print("\nMời bạn nhập vào chức năng tiếp theo: ");
+			System.out.println("\nMời bạn nhập vào chức năng tiếp theo(1/2): ");
+			System.out.println("1. Tạo danh sách Bee mới: ");
+			System.out.println("2. Tấn công Bee:");
+			System.out.print("Xin mời nhập chức năng: ");
 			h = sc.nextInt();
 
 			if (h != 1 && h != 2) {
@@ -120,7 +128,10 @@ public class Test {
 					System.out.println("Sau khi tấn công lần " + to + " : ");
 					Attack();
 					in();
-					System.out.print("Mời bạn nhập vào chức năng tiếp theo : ");
+					System.out.println("\nMời bạn nhập vào chức năng tiếp theo(1/2): ");
+					System.out.println("1. Tạo danh sách Bee mới: ");
+					System.out.println("2. Tấn công Bee:");
+					System.out.print("Xin mời nhập chức năng: ");
 					h = sc.nextInt();
 					if (h != 1 && h != 2) {
 						do {

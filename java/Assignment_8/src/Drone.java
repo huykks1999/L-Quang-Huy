@@ -5,6 +5,7 @@ public class Drone extends Bee {
 
 	static List<Drone> drone = new ArrayList<>(10);
 
+	//override void Damage Bee of Drone để tấn công ong loại Drone
 	@Override
 	public void damage(int damage) {
 		super.damage(damage);
@@ -19,7 +20,8 @@ public class Drone extends Bee {
 			health = 0;
 		}
 	}
-
+    
+	// Override void checkHealthStatus of Bee để xem con Drone còn sống hay hẹo
 	@Override
 	public void checkHealthStatus() {
 		if (health > 50) {
@@ -28,7 +30,8 @@ public class Drone extends Bee {
 			status = "Death";
 		}
 	}
-
+    
+	// construcster begin for blood = 100 
 	public Drone() {
 		this.health = 100;
 		
